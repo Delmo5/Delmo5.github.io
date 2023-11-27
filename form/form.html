@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Guigui's Survey :)</h1>
+      <p id="description">Thank you for taking the time to fill this survey</p>
+    </header>
+    <form id="survey-form" method="get" action="">
+      <div class="form-element">
+        <label id="name-label">
+          Name : <input id="name" type="name" placeholder="Enter  your name here" required>
+        </label>
+      </div>
+
+      <div class="form-element">
+        <label id="email-label">
+          Email : <input id="email" type="email" placeholder="Enter your email here" required>
+        </label>
+      </div>
+
+      <div class="form-element">
+        <label id="number-label">
+          Age : <input id="number" type="number" min="0" max="99" placeholder="Enter your age here">
+        </label>
+      </div>
+
+      <div class="form-element">
+        <label>What's your favourite option?
+          <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+          </select>
+        </label>
+      </div>
+
+
+      <div class="form-element">
+        <label id="checkbox">
+          Select the options you want
+          <label><input type="checkbox" value="checkbox1">Option 1</label>
+          <label><input type="checkbox" value="checkbox2">Option 2</label>
+          <label><input type="checkbox" value="checkbox3">Option 3</label>
+          <label><input type="checkbox" value="checkbox4">Option 4</label>
+        </label>
+      </div>
+
+      <div class="form-element">
+        <label id="radio">
+          Choose between those two choices
+          <label><input type="radio" id="survey-form radio" name="radio" value="radio1">Option 1</label>
+          <label><input type="radio" id="survey-form radio" name="radio" value="radio2">Option 2</label>
+        </label>
+      </div>
+
+      <div class="form-element">
+        <label id="comment">Any suggestions?
+          <textarea id="survey-form comment" placeholder="Add a comment"></textarea>
+        </label>
+      </div>
+
+      <div class="form-element">
+        <input type="submit" id="submit" value="SEND IT NOW">
+      </div>
+      
+    </form>
+
+  </body>
+
+
+</html>

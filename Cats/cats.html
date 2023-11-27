@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1{
+            color: gray;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .cat h2{
+            color: aqua;
+        }
+        legend{
+            color: red;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>Cat Project :)</title>
+    </head>
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <section class="cat">
+                <h2>Cat Photos</h2>
+                <p>See more <a href="https://freecatphotoapp.com/">cat photos</a> in our gallery.</p>
+                <a href="https://www.cat.com"><img src="images\relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+            </section>
+            <section class="list">
+                <h2>Cat lists</h2>
+                <h3>Things that cats love : </h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <figure>
+                    <a href="https://www.Lasagne.com"><img src="images\lasagna.jpg" alt="Lasagne"></a>
+                    <figcaption>Cats <em>love</em> lasagna</figcaption>
+                </figure>
+                <h3>Top 3 things cat hate:</h3>
+                <ol>
+                    <li>flea treatement</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="images\cats.jpg">
+                    <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+                </figure>
+            </section>
+
+            <section class="form">
+
+                <h2>Cat form</h2>
+
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                            <label><input type="radio" value="indoor" name="indoor-outdoor" id="indoor">Indoor</label>
+                            <label><input type="radio" value="outdoor" name="indoor-outdoor" id="outdoor">Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                            <label><input type="checkbox" value="loving" name="personality" id="loving">Loving</label>
+                              <label><input type="checkbox" value="crazy" name="personality" id="crazy">Cazy</label>
+                               <label><input type="checkbox" value="energetic" name="personality" id="energetic">Energetic</label>
+                      </fieldset>
+                          <input type="text" placeholder="cat photo URL" name="catphotourl" required>
+                          <input type="submit" value="Submit">
+                 </form>
+
+                </section>
+
+        </main>
+        <footer>
+            <p>
+              No Copyright - <a href="http://www.didier.com">didier</a>
+            </p>
+        </footer>
+    </body>
+
+</html>
