@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header><h1>JS Documentation</h1></header>
+      
+      <a href="#Grammar_and_types" class="nav-link">Grammar and types</a>
+      <a href="#Basics" class="nav-link">Basics</a>
+      <a href="#Declarations" class="nav-link">Declarations</a>
+      <a href="#Comments" class="nav-link">Comments</a>
+      <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+      <a href="#Declaration_and_initialization" class="nav-link">Declaration and initialization</a>
+      <a href="#Reference" class="nav-link">Reference</a>
+      
+    </nav>
+    <div class="main-section-div">
+    <section class="main-section" id="Grammar_and_types">
+      <header>
+        <h1>Grammar and types</h1>
+      </header>
+      <p>This chapter discusses JavaScript's basic grammar, variable declarations, data types and literals.</p>
+    </section>
+    <section class="main-section" id="Basics">
+      <header>
+        <h1>Basics</h1>
+      </header>
+      <p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.</p>
+      <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
+      <code>const Früh = "foobar";</code>
+      <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
+      <p>In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+      <p>A semicolon is not necessary after a statement if it is written on its own line. But if more than one statement on a line is desired, then they must be separated by semicolons.</p>
+      <p>It is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.</p>
+      <p>The source text of JavaScript script gets scanned from left to right, and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. (Spaces, tabs, and newline characters are considered whitespace.)</p>
+    </section>
+    <section class="main-section" id="Declarations">
+      <header>
+        <h1>Declarations</h1>
+      </header>
+      <p>JavaScript has three kinds of variable declarations.</p>
+      <ul><li>var<br>Declares a variable, optionally initializing it to a value.</li><li>let
+        Declares a block-scoped, local variable, optionally initializing it to a value.</li><li>const
+          Declares a block-scoped, read-only named constant.</li></ul>
+    </section>
+    <section class="main-section" id="Comments">
+      <header>
+        <h1>Comments</h1>
+      </header>
+      <p>The syntax of comments is the same as in C++ and in many other languages:</p>
+      <code>// a one line comment
+
+      /* this is a longer,
+       * multi-line comment
+      */
+      </code>
+      <p>You can't nest block comments. This often happens when you accidentally include a */ sequence in your comment, which will terminate the comment.</p>
+      <code>/* You can't, however, /* nest comments */ SyntaxError */</code>
+        <p>In this case, you need to break up the */ pattern. For example, by inserting a backslash:</p><code>/* You can /* nest comments *\/ by escaping slashes */</code><p>Comments behave like whitespace, and are discarded during script execution.</p>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+      <header>
+        <h1>Declaring variables</h1>
+      </header>
+      <p>You can declare a variable in two ways:</p>
+      <ul><li>With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables, depending on the execution context.</li><li>With the keyword const or let. For example, let y = 13. This syntax can be used to declare a block-scope local variable. (See Variable scope below.)</li></ul>
+    </section>
+    <section class="main-section" id="Declaration_and_initialization">
+      <header>
+        <h1>Declaration and initialization</h1>
+      </header>
+      <p>In a statement like let x = 42, the let x part is called a declaration, and the = 42 part is called an initializer. The declaration allows the variable to be accessed later in code without throwing a ReferenceError, while the initializer assigns a value to the variable. In var and let declarations, the initializer is optional. If a variable is declared without an initializer, it is assigned the value undefined.</p>
+      <code>let x;<br>
+console.log(x); // logs "undefined"</code>
+      <p>In essence, let x = 42 is equivalent to let x; x = 42.</p>
+      <p>const declarations always need an initializer, because they forbid any kind of assignment after declaration, and implicitly initializing it with undefined is likely a programmer mistake.</p>
+      <code>const x; // SyntaxError: Missing initializer in const declaration</code>
+    </section>
+    <section class="main-section" id="Reference"><header>
+        <h1>Reference</h1>
+      </header>
+      <p>If you want to learn more about this topic, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types">click here</a>.</p></section>
+    </div>
+  </main>
