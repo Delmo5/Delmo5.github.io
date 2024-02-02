@@ -8,32 +8,81 @@
   </head>
   <body>
     <header id="header">
-      <img id="header-img" src="https://techhavenbn.com/wp-content/uploads/2020/06/techhaven_logoblack-01.png" width="50px" height="50px">
-      <h1 class="title">Our Products<h1>
-        
-      <nav id="nav-bar">
-        <a class="nav-link" href="section1">Products</a>
-        <a class="nav-link" href="section2">More information</a>
-        <a class="nav-link" href="section3">Special deals</a>
-      </nav>
+      <div id="logo-name-div">
+        <img id="header-img" src="https://techhavenbn.com/wp-content/uploads/2020/06/techhaven_logoblack-01.png" width="50px" height="50px">
+        <h1 class="title">Tech Haven<h1>
+      </div>
+      <div>
+        <nav id="nav-bar">
+          <a class="nav-link" href="#product-section">Products</a>
+          <a class="nav-link" href="#About-us">More information</a>
+          <a class="nav-link" href="#from-section">Contact us</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="intro"><p><p class="subtitle">Discover our new products. We offer the latest technologies on the market at a fraction of the price!</p></section>
-      <section id="section1"><h2 class="product-title">SmartWatch X1</h2><p class="price">$149.99<p><p class="product-description">Stay connected and monitor your health with the SmartWatch X1. This sleek and stylish smartwatch features a vibrant AMOLED display, heart rate monitoring, GPS tracking, and waterproof design. Receive notifications, track your fitness goals, and enhance your lifestyle with this cutting-edge wearable.</p></section>
-      <section id="section2"><h2 class="product-title">TechLuxe Headphones</h2><p class="price">$129.99<p>Immerse yourself in premium sound quality with our TechLuxe Headphones. These over-ear wireless headphones deliver crystal-clear audio, deep bass, and a comfortable fit for extended listening sessions. With noise-canceling technology and a foldable design, these headphones are perfect for on-the-go music lovers.<p class="product-description"></p></section>
-      <section id="section3"><h2 class="product-title">UltraBook Pro</h2><p class="price">$1,199.99<p>Elevate your productivity with the UltraBook Pro. This powerful laptop combines sleek design with high-performance features. With a blazing-fast processor, ample storage, and a high-resolution display, the UltraBook Pro is perfect for work, creative projects, and entertainment. Experience the ultimate in portability and performance.<p class="product-description"></p></section>
-      <iframe width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-      <form id="form">
-        <p class="form-title">Give us your contact for a custom deal<p>
-        <input id="email" placeholder="email" type="email">
-        <input id="submit" type="submit" target="https://www.freecodecamp.com/email-submit">
-      </form>
+      <section id="product-section">
+        <div class="section-intro"><h2 class="section-title">Our products</h2>
+        <p class="subtitle">Discover our new products. We offer the latest technologies on the market at a fraction of the price!</p></div>
+      <div id="product-div">
+        <div class="product">
+          <h2 class="product-title">SmartWatch X1</h2>
+          <p class="price">$149.99<p>
+          <p class="product-description">Stay connected and monitor your health with the SmartWatch X1. This sleek and stylish smartwatch features a vibrant AMOLED display, heart rate monitoring, GPS tracking, and waterproof design. Receive notifications, track your fitness goals, and enhance your lifestyle with this cutting-edge wearable.</p>
+          <input type="button" class="product-button" value="SELECT"></input>
+        </div>
+        <div class="product">
+          <h2 class="product-title">TechLuxe Headphones</h2>
+          <p class="price">$129.99</p>
+          <p class="product-description">Immerse yourself in premium sound quality with our TechLuxe Headphones. These over-ear wireless headphones deliver crystal-clear audio, deep bass, and a comfortable fit for extended listening sessions. With noise-canceling technology and a foldable design, these headphones are perfect for on-the-go music lovers.</p>
+          <input type="button" class="product-button" value="SELECT"></input>
+        </div>
+        <div class="product">
+          <h2 class="product-title">UltraBook Pro</h2>
+          <p class="price">$1,199.99</p>
+          <p class="product-description">Elevate your productivity with the UltraBook Pro. This powerful laptop combines sleek design with high-performance features. With a blazing-fast processor, ample storage, and a high-resolution display, the UltraBook Pro is perfect for work, creative projects, and entertainment. Experience the ultimate in portability and performance.</p>
+          <input type="button" class="product-button" value="SELECT"></input>
+        </div>
+      </div>
+      </section>
+      <section id="About-us">
+        <p>Watch this short video to learn more!</p>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"id="video" ></iframe>
+      </section>
+      <section id="from-section">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <p class="form-title">Give us your contact for a custom deal<p>
+          <input id="email" placeholder="email" type="email" name="email">
+          <input id="submit" type="submit" target="https://www.freecodecamp.com/email-submit">
+        </form>
+      </section>
     </main>
-    <footer>
-
+    <footer id="footer">
+      <div id="logo-social-div">
+        <img id="header-img" src="https://techhavenbn.com/wp-content/uploads/2020/06/techhaven_logoblack-01.png" width="50px" height="50px">
+        <div class="social-icons">
+          <p>Join us!</p>
+          <div id="social-image-div">
+            <a href="https://www.facebook.com/freecodecamp/">
+              <img class="fab fa-facebook-f" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" width="20px" height="20px">
+            </a>
+            <a href="https://instagram.com/freecodecamp">
+              <img class="fab fa-facebook-f" src="https://i.pinimg.com/736x/95/73/1a/95731a2d0ab3c1851ed7b5328d068b1f.jpg" width="20px" height="20px">
+            </a>
+            <a href="https://www.youtube.com/freecodecamp">
+              <img class="fab fa-facebook-f" src="https://t4.ftcdn.net/jpg/03/04/06/01/360_F_304060171_OUUSKIITlOLRgnDI1EFO8eSZqOHab6Iq.jpg" width="20px" height="20px">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="nav-div">
+        <nav id="nav-bar-footer">
+          <a class="link" href="">Privacy</a>
+          <a class="link" href="">Terms</a>
+          <a class="link" href="">Contact</a>
+        </nav>
+        <p id="legal-info">Copyright 2024, Tech Haven</p>
+      </div>
     </footer>
   </body>
-
 </html>
