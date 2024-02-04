@@ -1,0 +1,226 @@
+:root{
+    --headerfooter: black;
+    --headerheight: 70px;
+    --img-dimention: 400px;
+    --img-dimention-mobile: 250px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+}
+main{
+    padding: 0px;
+    margin: 0px;
+
+    display:flex;
+    flex-direction: column;
+}
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+header{
+    border-bottom: 3px solid var(--headerfooter);
+    background-color:cadetblue;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: var(--headerheight);
+    z-index:1;
+}
+header a:hover{
+  background-color: gray;
+}
+header a, header div{
+    display: flex;
+    height: var(--headerheight);
+    align-items: center;
+}
+header a{
+  padding: 0px 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  padding: 25px 0px;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#projects{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 0px;
+    background-color:#AB9B96;
+}
+#projects-grid{
+    width: 100%;
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 100px;   
+}
+#projects img{
+    width: var(--img-dimention);
+    height: var(--img-dimention);
+}
+.project-div{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  width: var(--img-dimention);
+  transition: transform 0.3s ease-in-out 0ms;
+  
+}
+.project-div:hover{
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+}
+
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color:gray;
+    justify-content: center;
+    height: 70vh;
+}
+#contact-intro{
+  text-align: center;
+  position: relative;
+  top: -10%;
+  font-size: 1.5rem;
+}
+#contact-div{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    font-size: 1.5rem;
+  top: -10%;
+}
+#profile-link:hover, #mail:hover, #phone:hover{
+    transform: scale(1.5);
+}
+#profile-link, #phone{
+    transition: transform 0.3s ease-in-out 0ms;
+}
+#mail{
+  transition: transform 0.2s ease-in-out 0ms;
+}
+.social-icon{
+  width: 20px;
+  height: 20px;
+  
+}
+.social-icon-div, #mail, #phone{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#mail::after{
+  content: "Send a mail"
+}
+#mail:hover::after{
+  color: white;
+  content: "guillaume.bourgeois.2@ens.etsmtl.ca"
+}
+#phone::after{
+  content: "Give me a call"
+}
+#phone:hover::after{
+  color: white;
+  content: "514-664-7602"
+}
+
+footer{
+    border-top: 3px solid var(--headerfooter);
+    background-color:gray;
+    height: 10vh;
+}
+@media only screen and (max-width: 1450px){
+  #projects-grid{
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    width: 100%;
+  }
+  #projects{
+    align-items: center;
+    margin: 0px 0px;
+    
+  }
+  main{
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 1020px){
+  #projects-grid{
+    display:flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  #contact-div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left:0px;
+}
+header, footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left:0px;
+}
+#contacts{
+    height: 60vh;
+}
+#contact-intro, #contact-div{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 720px){
+    
+    header, footer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left:0px;
+    }
+    
+    #projects img{
+        width: var(--img-dimention-mobile);
+        height: var(--img-dimention-mobile);
+    }
+    .project-div{
+      width: var(--img-dimention-mobile);
+    }
+    #contact-div{
+        font-size: 0.7rem;
+    }
+    #profile-link:hover, #mail:hover, #phone:hover{
+        transform: scale(1.2);
+    }
+  }
