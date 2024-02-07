@@ -23,9 +23,12 @@ const addOrUpdateTask = () => {
     description: descriptionInput.value,
   };
 
+  // If task not found, we create a new one.
   if (dataArrIndex === -1) {
     taskData.unshift(taskObj);
-  } else {
+  } 
+  // If task already exists, that means we want to edit it, so we update it.
+  else {
     taskData[dataArrIndex] = taskObj;
   }
 
@@ -87,11 +90,12 @@ const reset = () => {
   currentTask = {};
 }
 
-if(taskData.length){updateTaskContainer();}
+// Displays the tasks in the UI when the user reloads the page.
+if(taskData.length) {
+  updateTaskContainer();
+}
 
-openTaskFormBtn.addEventListener("click", () =>
-  taskForm.classList.toggle("hidden")
-);
+openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
 
 closeTaskFormBtn.addEventListener("click", () => {
   const formInputsContainValues = titleInput.value || dateInput.value || descriptionInput.value;
