@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Personal Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+
+        <header>
+            <nav id="navbar">
+                <div>
+                    <a href="#welcome-section">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contacts">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="welcome-section">
+                <h1>Hello World!</h1>
+                <p>My name is Guillaume Bourgeois, I am a software engineer</p>
+            </section>
+
+            <section id="projects">
+                <div id="project-into"><h1 class="project-title">Checkout my latest projects!</h1></div>
+                <div id="container">
+                    <div id="projects-grid">
+                        <a class="project-link" href="Nietzche\index.html"><div class="project-div"><img src="https://preview.redd.it/a-painting-of-friedrich-nietzsche-by-edvard-munch-1906-as-v0-js7tuhmghn5b1.jpg?width=640&crop=smart&auto=webp&s=7bafcd50a2e5875845b307d1b23dc1df2f59cd89"><p>Nietzche Tribute Page</p></div></a>
+                        <a class="project-link" href="/Product landing page/index.html"><div class="project-div"><img src="data:image/png;base64,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"><p>Product Landing Page</p></div></a>
+                        <a class="project-link" href="/form/form.html"><div class="project-div"><img src="../form/blacker.jpg"><p>Form</p></div></a>
+                        <a class="project-link" href="/Documentation/index.html"><div class="project-div"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"><p>JavaScript Documentation</p></div></a>
+                        <a class="project-link" href="/Palindrome checker/index.html"><div class="project-div"><img src="https://miro.medium.com/v2/resize:fit:643/0*Z6lY-zYJpRT7TbXc.jpeg"><p>Palindrome Checker</p></div></a>
+                        <a class="project-link" href="/Roman number converter/index.html"><div class="project-div"><img src="https://media.licdn.com/dms/image/D4D12AQFllE8K3ibmyg/article-cover_image-shrink_600_2000/0/1691328698917?e=2147483647&v=beta&t=0rtt4eJD--I_lXVV9K7Gnf3E1_Yf64f3J4umyh_Tr7E"><p>Roman Number Converter</p></div></a>
+                        <a class="project-link" href=""><div class="project-div"><img src="https://i1.sndcdn.com/avatars-000615293880-c3si4s-t500x500.jpg"><p>Description</p></div></a>
+                        <a class="project-link" href=""><div class="project-div"><img src="https://i1.sndcdn.com/avatars-000615293880-c3si4s-t500x500.jpg"><p>Description</p></div></a>
+                        <a class="project-link" href=""><div class="project-div"><img src="https://i1.sndcdn.com/avatars-000615293880-c3si4s-t500x500.jpg"><p>Description</p></div></a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contacts">
+                <div id="contact-intro">
+                    <h1>Let's get to know each others...</h1>
+                    <p>I am so interesting</p>
+                </div>
+                <div id="contact-div">
+                    <a id="profile-link" target="_blank" href="https://github.com/Delmo5/"><div class="social-icon-div"><img class="social-icon"src="https://cdn-icons-png.flaticon.com/512/25/25231.png" target="_blank" ><p>GitHub</p></div></a>
+                    <a id="profile-link" href="https://www.linkedin.com/in/guillaume-bourgeois-849909189/" target="_blank"><div class="social-icon-div"><img class="social-icon"src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"target="_blank" ><p>LinkedIn</p></div></a>
+                    <div id="mail"><img class="social-icon"src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/79020/mail-icon-clipart-lg.png"><p id="mail-content"></p></div>
+                    <div id="phone"><img class="social-icon"src="https://i.pinimg.com/originals/b5/d7/19/b5d7198734ee5174b581630628ecfdd6.png"><p id="phone-content"></p></div>
+                </div>
+            </section>
+    
+        </main>
+        
+        <footer>
+            <p>© Bourgeois, all rights reserved</p>
+        </footer>
+  
+    </body>
+</html>
