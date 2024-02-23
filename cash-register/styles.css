@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+#input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+#register-change-div{
+    border: thick double #32a1ce;
+    text-align: left;
+}
+
+#change-due{
+    border-top: thick double #32a1ce;
+    border-bottom: thick double #32a1ce;
+    font-weight: bold;
+}
+
+#purchase-btn{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+}
+
+#purchase-btn:active {
+    background-color: #ff8c00;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#total-div{
+    border: thick double #32a1ce;
+    background-color: aqua;
+    font-weight: bold;
+}
+
+span{
+    font-weight: normal;
+}
+
+#cash-register{
+    padding:20px;
+    border: solid;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#transaction-summary{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}

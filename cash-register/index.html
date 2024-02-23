@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Cash register</title>
+  </head>
+  <body>
+    <header>
+        <h1>Welcome to the Store</h1>
+    </header>
+    <div id="transaction-summary">
+        <h2 style="border-bottom: solid;">Transaction summary: </h2>
+        <div style="font-weight: bold;">Change Due: <span id="change-due-value">$0.00</span></div>
+        <div id="status" style="font-weight: bold;"></div>
+        <div id="change-due"></div>
+    <div id="input-div">
+        <label for="cash">Enter the amount paid by the customer: </label>
+        <input type="number" id="cash" />
+        <button id="purchase-btn" onclick="calculateChange()">Calculate change</button>
+    </div>
+    <div id="cash-register">
+        <div id="total-div">Total: <span id="total">$0.00</span></div>
+        <h3>--Cash left in register--</h3>
+        <div id="register-change-div">
+            <div>Pennies: <span class="register-change"id="register-pennies">$0.00</span></div>
+            <div>Nickels: <span class="register-change"id="register-nickels">$0.00</span></div>
+            <div>Dimes: <span class="register-change"id="register-dimes">$0.00</span></div>
+            <div>Quarters: <span class="register-change"id="register-quarters">$0.00</span></div>
+            <div>Ones: <span class="register-change"id="register-ones">$0.00</span></div>
+            <div>Fives: <span class="register-change"id="register-fives">$0.00</span></div>
+            <div>Tens: <span class="register-change"id="register-tens">$0.00</span></div>
+            <div>Twenties: <span class="register-change"id="register-twenties">$0.00</span></div>
+            <div>Hundreds: <span class="register-change"id="register-hundreds">$0.00</span></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
