@@ -1,0 +1,221 @@
+
+:root{
+    --main-color: #ff0000;
+    --electric: #F7D02C;
+    --fire: #EE8130;
+    --water: #6390F0;
+    --grass: #7AC74C;
+    --bug: #A6B91A;
+    --normal: #A8A77A;
+    --poison: #A33EA1;
+    --flying: #A98FF3;
+    --fighting: #C22E28;
+    --ground: #E2BF65;
+    --rock: #B6A136;
+    --psychic: #F95587;
+    --ghost: #735797;
+    --ice: #96D9D6;
+    --dragon: #6F35FC;
+    --dark: #705746;
+    --steel: #B7B7CE;
+    --fairy: #D685AD;
+}
+  h1, h2, #search {
+    color: var(--main-color);
+    text-align: center;
+  }
+  h1{
+    -webkit-text-stroke: 1px black;
+  }
+
+#search label {
+  font-size: 20px;
+  font-weight: bold;
+  animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+  0% { color: var(--electric); }
+  14% { color: var(--fire); }
+  28% { color: var(--water); }
+  42% { color: var(--grass); }
+  57% { color: var(--bug); }
+  71% { color: var(--normal); }
+  85% { color: var(--poison); }
+  100% { color: var(--fairy); }
+}
+  
+
+  #search-button:active {
+    background-color: #ff8c00;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+  #search-button {
+    background-color: var(--main-color);
+    box-shadow: 0 5px #999;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: black;
+  }
+  #show-more-btn{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: black;
+    margin-top: 30px;
+  }
+
+    body{
+        background-image: url("pokemon-3840x2160.jpg");
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+    }
+    #display{
+        background-color: white;
+        border-radius: 10px;
+        border : 3px solid var(--main-color);
+        width: 30%;
+        display: none;
+        min-width: 300px;
+    }
+    #sprite-div{
+        background-color:aliceblue;
+        border-radius: 10px;
+        border : 3px solid black;
+        padding: 10px;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #types-div{
+        display: flex;
+        gap: 10px;
+    }
+    #sprite{
+        width: 50%;
+        height: 50%;
+    }
+    .type{
+        background-color: var(--main-color);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .grass{
+        background-color: var(--grass);
+    }
+    .fire{
+        background-color: var(--fire);
+    }
+    .water{
+        background-color: var(--water);
+    }
+    .bug{
+        background-color: var(--bug);
+    }
+    .normal{
+        background-color: var(--normal);
+    }
+    .poison{
+        background-color: var(--poison);
+    }
+    .flying{
+        background-color: var(--flying);
+    }
+    .fighting{
+        background-color: var(--fighting);
+    }
+    .ground{
+        background-color: var(--ground);
+    }
+    .rock{
+        background-color: var(--rock);
+    }
+    .psychic{
+        background-color: var(--psychic);
+    }
+    .ghost{
+        background-color: var(--ghost);
+    }
+    .ice{
+        background-color: var(--ice);
+    }
+    .dragon{
+        background-color: var(--dragon);
+    }
+    .dark{
+        background-color: var(--dark);
+    }
+    .steel{
+        background-color: var(--steel);
+    }
+    .fairy{
+        background-color: var(--fairy);
+    }
+    
+
+
+    #details{
+      margin-left: 20px;
+  }
+
+.pokemon {
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid var(--main-color);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 10px;
+  width: 10%;
+  min-width: 100px;
+}
+
+.pokemon .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0px;
+}
+
+#show-more-div {
+  color: white;
+  flex-wrap: wrap;
+  display: none;
+  justify-content:space-evenly;
+  width: 100%;
+  gap: 10px;
+}
+
+  .pokemon .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
+  }
+  .pokemon img{
+    width: 100px;
+    height: 100px;
+  }
